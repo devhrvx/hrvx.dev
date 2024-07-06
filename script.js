@@ -13,10 +13,8 @@ function closeNav() {
     document.querySelector('#logo').classList.remove('blur');
     document.querySelector('.open-btn').classList.remove('blur');
 }
-const all = document.querySelector('.blur');
 
 function redirHome() {
     window.location.href = 'index.html';
 }
 
-all.addEventListener("click", closeNav());
