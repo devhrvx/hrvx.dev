@@ -3,9 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/index.css">
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/scrollbar.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="/res/icon.png" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>Connect</title>
 </head>
 <body>
+    <div class="head">
+        <img id="logo" src="/res/header.png" alt="" onclick="redirHome()">
+        <div id="nav" class="nav">
+            <a href="javascript:void(0)" class="close-btn" onclick="closeNav()">&times;</a>
+            <div class="nav-content">
+                <img id="logo-nav" src="/res/icon.png" alt="">
+                <a href="/index.html">Home</a>
+                <a href="/about/about.html">About</a>
+                <a href="/projects/projects.html">Projects</a>
+                <a href="/connect/connect.html" class="active">Connect</a>
+            </div>
+        </div>
+        <span class="open-btn" onclick="openNav()">&#9776;</span>
+    </div>
+<div class="all">
     
+</div>
+<script src="/script.js"></script>
 </body>
 </html>
