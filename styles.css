@@ -7,6 +7,7 @@ body {
     overflow-x: hidden;
     transition: 1s ease;
     padding-left: 4%;
+    animation: fade-in 1s ease-in-out;
 }
 .all {
     width: 100%;
@@ -51,20 +52,29 @@ a {
     margin-top: 2.5%;
 }
 
-#logo, #logo-nav {
-    width: 100px;
-    height: 100px;
-    background-color: #00ff4084;
-    border: transparent;
+img {
+    border: none;
+}
+#logo {
+    width: 300px;
+    height: 96px;
+    transition: .5s ease;
+}
+#logo:hover {
+    transform: scale(1.05);
+    transition: .5s ease;
+    cursor: pointer;
 }
 #logo-nav {
+    width: 150px;
+    height: 150px;
     margin-bottom: 40%;
-    margin-left: 5%;
+    margin-left: 15%;
     transition: .5s ease;
 }
 .nav {
     padding-left: 0;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Space Mono', sans-serif;
     height: 100%;
     width: 0;
     position: fixed;
@@ -87,7 +97,7 @@ a {
 .nav a {
     padding: 8px;
     text-decoration: none;
-    font-size: 36px;
+    font-size: 2em;
     color: white;
     display: block;
     transition: 0.3s;

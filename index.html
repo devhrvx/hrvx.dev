@@ -8,19 +8,20 @@
     <link rel="stylesheet" href="scrollbar.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="res/icon.png" type="image/x-icon" />
     <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>John Harvey Salinas</title>
 </head>
 <body>
     <div class="head">
-        <img id="logo" alt="">
+        <img id="logo" src="res/header.png" alt="" onclick="redirHome()">
         <div id="nav" class="nav">
             <a href="javascript:void(0)" class="close-btn" onclick="closeNav()">&times;</a>
             <div class="nav-content">
-                <img id="logo-nav" alt="">
+                <img id="logo-nav" src="res/icon.png" alt="">
                 <a href="#" class="active">Home</a>
-                <a href="#">About</a>
+                <a href="about/about.html">About</a>
                 <a href="#">Projects</a>
                 <a href="#">Connect</a>
             </div>
@@ -30,7 +31,7 @@
 <div class="all"> <!-- Put !!!!!! all elements inside this (all)-->
     <div class="name-container">
         <div class="first-name" id="first-name">
-            John Harvey<span id="star">*</span>
+            John Harvey<span id="star" onclick="toGitHub()">*</span>
         </div>
     </div>
     <div class="name-container">
@@ -39,6 +40,14 @@
         </div>
     </div>
     <hr>
+    <div class="contents">
+        <div class="status">Student,<br>Aspiring Software Developer</div>
+        <div class="parent-nila">
+            <div class="about"><a href="about/about.html">About</a></div>
+            <div class="projects"><a href="projects/projects.html">Projects</a></div>
+            <div class="connect"><a href="connect/connect.html">Connect</a></div>
+        </div>
+    </div>
 </div>
 <script src="script.js"></script>
 <script src="index.js"></script>

@@ -1,7 +1,8 @@
 document.addEventListener('DOMContentLoaded', function () {
     const firstName = document.querySelector('.first-name');
     const lastName = document.querySelector('.last-name');
-
+    const status = document.querySelector('.status');
+    const parentNila = document.querySelector('.parent-nila');
    
     firstName.addEventListener('animationend', function () {
         if (event.animationName === 'typing') {
@@ -10,6 +11,17 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
-    const body = document.body;
-
+    lastName.addEventListener('animationend', function () {
+        if (event.animationName === 'typing') {
+            status.classList.add('finished-a');
+            parentNila.classList.add('finished-a');
+        }
+    });
 });
+
+
+const url = 'https://github.com/devhrvx';
+
+function toGitHub() {
+    window.open(url, '_blank').focus();
+}

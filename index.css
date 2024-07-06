@@ -10,8 +10,15 @@ body {
     flex-direction: column;
     align-items: left;
     margin-top: 8%;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
 }
-
+a {
+    color: #ffffff;
+}
 .first-name {
     border-right: #00ff40 solid 2px;
     width: fit-content;
@@ -26,7 +33,7 @@ body {
     white-space: nowrap;
     overflow: hidden;
     display: inline-block;
-    animation: typing 2s steps(30, end), blink-caret .75s step-end infinite;
+    animation: typing 1s steps(30, end), blink-caret .75s step-end infinite;
     animation-fill-mode: forwards; /* Keeps the final animation state */
 }
 
@@ -63,28 +70,81 @@ body {
     font-size: 50%;
     vertical-align: super;
     word-spacing: .5;
+    cursor: pointer;
 }
 
 hr {
     margin-top: 2%;
     width: 86%;
     height: 3px;
+    overflow: hidden;
     border: none;
-    background: linear-gradient(to right, #0c0f0d, #01c30f)
+    background: linear-gradient(to right, #0c0f0d, #01c30f);
+    animation: hori 1s ease-out;
 }
 
+@keyframes hori {
+    from { width: 0 }
+    to { width: 86%  
+    }
+}
 @keyframes typing {
     from { width: 0 }
-    to { width: 100% 
-        
+    to { width: 100%  
     }
 }
 
 @keyframes blink-caret {
     50% { border-color: transparent }
 }
-
-
+@keyframes fade-in {
+    0% { opacity: 0 }
+    100% { opacity: 1 }
+}
 .name-container:nth-child(2) {
     margin-top: 0;
+}
+
+.contents {
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 1%;
+    color: #f3f3f3;
+    width: 93%;
+}
+
+.status {
+    width: fit-content;
+    opacity: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 50;
+    font-size: 150%;
+    animation: fade-in 1s ease-out;
+    animation-delay: 1.7s;
+}
+
+.status.finished-a, .parent-nila.finished-a {
+    opacity: 1;
+}
+
+.about, .projects, .connect {
+    font-family: 'Space Mono', sans-serif;
+    font-size: 150%;
+}
+
+
+.parent-nila {
+    animation: fade-in 1s ease-out;
+    animation-delay: 1.7s;
+   opacity: 0;
+   width: 40%;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+}
+
+a:hover {
+    color: #00ff40;
 }
