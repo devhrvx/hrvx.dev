@@ -6,7 +6,7 @@ body {
     padding: 0;
     overflow-x: hidden;
     transition: 1s ease;
-
+    padding-left: 4%;
 }
 .all {
     width: 100%;
@@ -16,6 +16,11 @@ body {
 .blur {
     filter: blur(2px) brightness(0.5);
     transition: 1s ease;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
 }
 
 @keyframes fade-in {
@@ -39,7 +44,7 @@ a {
     width: 90%;
     height: 15%;
     padding: 0 10px;
-    margin: 2.5% auto;
+    margin-top: 2.5%;
 }
 
 #logo {
@@ -101,7 +106,7 @@ a {
     font-size: 35px;
     cursor: pointer;
     color: #349c0b;
-    transition: .5s ease-in-out;
+    transition: .3s ease-in-out;
     margin-left: 10%;
 }
 
