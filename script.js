@@ -25,6 +25,6 @@ function outsideClickListener(event) {
 }
 
 function redirHome() {
-    window.location.href = '../index.html';
+    window.location.href = 'https://devhrvx.github.io/hrvx.dev/index.html';
 }
 
