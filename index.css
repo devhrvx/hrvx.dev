@@ -1,8 +1,3 @@
-body {
-    background-image: url('res/bg.svg');
-    background-size: cover;
-    background-repeat: no-repeat;
-}
 
 .name-container {
     width: fit-content;

@@ -1,5 +1,4 @@
 body, html {
-    background-color: #0c0f0d;
     display: flex;
     flex-direction: column;
     margin: 0;
@@ -11,7 +10,14 @@ body, html {
     height: 100%;
 }
 
+html {
+    background-image: url('res/bg.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    scroll-behavior: smooth;
+}
 body {
+    background-color: #0c0f0d;
     padding-left: 3%;
 }
 
