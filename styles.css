@@ -9,28 +9,22 @@ body, html {
     height: 100%;
 }
 
-html {
+body {
+    background-color: #0c0f0d;
     background-image: url('res/bg.svg');
     background-size: cover;
     background-repeat: no-repeat;
     scroll-behavior: smooth;
 }
-body {
-    background-color: #0c0f0d;
-    padding-left: 3%;
-}
 
 .all {
+    margin-left: 3%;
     width: 100%;
     height: fit-content;
     transition: 1s ease;
 }
 
 @media (max-width: 600px) {
-
-    body {
-        padding-left: 0;
-    }
 
     .all {
         width: 100%;
@@ -71,6 +65,10 @@ a {
 }
 
 .head {
+    z-index: 9999;
+    position: sticky;
+    top: 0;
+    margin-left: 3%;
     display: flex;
     align-items: center;
     justify-content: left;
@@ -148,6 +146,8 @@ img {
 }
 
 .open-btn {
+    position: sticky;
+    top: 0;
     font-family: 'Space Mono', sans-serif;
     font-size: 35px;
     cursor: pointer;
