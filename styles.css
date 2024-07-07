@@ -14,11 +14,29 @@ body, html {
 body {
     padding-left: 3%;
 }
+
 .all {
     width: 100%;
     height: fit-content;
     transition: 1s ease;
 }
+
+@media (max-width: 600px) {
+
+    body {
+        padding-left: 0;
+    }
+
+    .all {
+        width: 100%;
+        height: fit-content;
+        transition: 1s ease;
+        display: block;
+    }
+
+    
+}
+
 .active {
     background-color: #00e03877;
     
