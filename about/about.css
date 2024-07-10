@@ -4,10 +4,12 @@
     100% { opacity: 1 }
 }
 body {
-    background-color: #0d1310;
+    background-color: #0c0f0d;
 }
 
-
+.head {
+    background-color:  #0c0f0d;
+}
 .title {
     height: fit-content;
     line-height: 1.1;
@@ -15,16 +17,11 @@ body {
     width: 100%;
     font-weight: 200;
     margin-top: 10px;
-    margin-left: -3%;
-    padding-left: 3%;
+    margin-left: 1.9%;
     font-family: 'Space Mono', sans-serif;
     color: #fff;
     letter-spacing: 2px;
-    background-color: #1c1c1c;
-}
-
-.head {
-    background-color: #0d1310;
+    margin-bottom: -1%;
 }
 
 #about {
@@ -42,4 +39,68 @@ body {
 
 @keyframes typing {
     from { width: 0 }
+}
+
+.sect-1 {
+    padding-top: 5%;
+    position: relative;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    justify-content: baseline;
+    background-color: #0b2b13;
+    height: fit-content;
+    font-size: 135%;
+    width: 100%;
+    margin-left: -3%;
+    padding-left: 5%;
+    padding-right: 3%;
+}
+
+.abt {
+    width: 92%;
+    border: white 1px solid;
+}
+
+.abt-txt {
+    font-weight: 400;
+    width: 60%;
+    height: fit-content;
+    z-index: 9;
+    position: absolute;
+}
+
+#abt-img {
+    z-index: 8;
+    position: absolute;
+    height: 85%;
+    right: 10%;
+}
+/* 
+    put on all elements for fade-in:
+
+    transform: translateY(20px);
+    opacity: 0;
+
+*/
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@media (max-width: 600px) {
+    .sect-1 {
+        flex-direction: column;
+    }
+    .abt-txt {
+        position: inherit;
+    }
+    #abt-img {
+        position: inherit;
+        width: 100%;
+        height: 100%;
+    }
 }
