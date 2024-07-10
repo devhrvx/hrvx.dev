@@ -30,7 +30,7 @@ body {
     display: inline-block;
     white-space: nowrap;
     overflow: hidden;
-    animation: typing .7s steps(10), cursor .7s step-end infinite;
+    animation: typing 1s steps(10), cursor .7s step-end infinite;
 }
 
 @keyframes cursor {
@@ -44,14 +44,14 @@ body {
 .sect-1 {
     padding-top: 5%;
     position: relative;
-    color: #fff;
+    color: #ffffffe8;
     font-family: 'Montserrat', sans-serif;
     display: flex;
     flex-direction: row;
     align-items: left;
     justify-content: baseline;
     background-color: #0b2b13;
-    height: fit-content;
+    height: 75vh;
     font-size: 135%;
     width: 100%;
     margin-left: -3%;
@@ -61,22 +61,27 @@ body {
 
 .abt {
     width: 92%;
-    border: white 1px solid;
 }
 
 .abt-txt {
     font-weight: 400;
-    width: 60%;
+    width: 55%;
     height: fit-content;
     z-index: 9;
     position: absolute;
 }
 
+#abt-trs {
+    color: #fffad7a4;
+}
+
 #abt-img {
     z-index: 8;
     position: absolute;
-    height: 85%;
+    height: 500px;
     right: 10%;
+    margin-top: .5%;
+    opacity: .989;
 }
 /* 
     put on all elements for fade-in:
@@ -86,21 +91,74 @@ body {
 
 */
 
-.fade-in.visible {
-    opacity: 1;
-    transform: translateY(0);
+.sect-2 {
+    width: 100%;
+    margin-left: -3%;
+    height: 50vh;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.sect-2-txt {
+    font-weight: 500;
+    font-size: 120%;
+    font-family: 'Montserrat', sans-serif;
+    width: 50%;
+    height: fit-content;
+}
+.sect-2-img {
+    width: 30%;
+    border-radius: 2px;
+    height: 35vh;
+    -webkit-box-shadow: 0px 0px 50px -9px rgba(87,87,87,1);
+    -moz-box-shadow: 0px 0px 50px -9px rgba(87,87,87,1);
+    box-shadow: 0px 0px 50px -9px rgba(87,87,87,1);
+}
+
+#scene {
+    height: 100%;
+    width: 100%;
+}
+
+.skills-sect {
+    background-image: url('../res/stars.svg');
+    background-position: center;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-left: -3%;
+    height: 100vh;
+    border-top: #fff 1px solid;
 }
 
 @media (max-width: 600px) {
-    .sect-1 {
+    .sect-1,.sect-2 {
         flex-direction: column;
+        height: fit-content;
+    }
+    .sect-2 {
+        padding-left: 3%;
     }
     .abt-txt {
+        font-size: 70%;
+        width: 100%;
         position: inherit;
     }
     #abt-img {
         position: inherit;
         width: 100%;
         height: 100%;
+    }
+    .sect-2-txt {
+        font-size: 70%;
+        width: 100%;
+    }
+    .sect-2-img {
+        margin-left: -3%;
+        width: 80%;
     }
 }
