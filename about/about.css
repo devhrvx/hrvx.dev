@@ -126,7 +126,7 @@ body {
 .skills-sect {
     background-image: url('../res/stars.svg');
     background-position: center;
-    background-size: contain;
+    background-size: cover;
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -134,6 +134,61 @@ body {
     height: 100vh;
     border-top: #fff 1px solid;
 }
+
+.skl-ttl {
+    margin-top: 3%;
+    font-family: 'Space Mono', sans-serif;
+    font-size: 370%;
+    color: white;
+    height: fit-content;
+    width: 90%;
+    margin-left: 4%;
+}
+
+#asterisk {
+    font-size: 80%;
+    vertical-align: super;
+    color: #00ff40;
+}
+
+.skill-box, .skill-box-first {
+    display: flex;
+    width: 75%;
+    height: 13vh;
+    /* border: 1px white solid; */
+    margin: 2% auto 35px auto; 
+    /* margin for first */
+
+}
+.skill-img {
+    width: 10%;
+    height: 13vh;
+    margin-right: 1%;
+}
+
+#img-skill {
+    width: 90%;
+    height: 100%;
+}
+
+.skill-bar {
+    border-radius: 5px;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 85%;
+    height: 3.3vh;
+    border: 1px white solid;
+}
+
+.skill {
+    background-color: white;
+    height: 100%;
+}
+
+.skill.eighty {
+    width: 80%;
+}
+
 
 @media (max-width: 600px) {
     .sect-1,.sect-2 {
