@@ -113,9 +113,9 @@ body {
     width: 30%;
     border-radius: 2px;
     height: 35vh;
-    -webkit-box-shadow: 0px 0px 50px -9px rgba(87,87,87,1);
+    /* -webkit-box-shadow: 0px 0px 50px -9px rgba(87,87,87,1);
     -moz-box-shadow: 0px 0px 50px -9px rgba(87,87,87,1);
-    box-shadow: 0px 0px 50px -9px rgba(87,87,87,1);
+    box-shadow: 0px 0px 50px -9px rgba(87,87,87,1); */
 }
 
 #scene {
@@ -124,14 +124,19 @@ body {
 }
 
 .skills-sect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
     background-image: url('../res/stars.svg');
     background-position: center;
-    background-size: cover;
+    background-size: contain;
     display: flex;
     flex-direction: column;
     width: 100%;
     margin-left: -3%;
-    height: 100vh;
+    height: 230vh;
     border-top: #fff 1px solid;
 }
 
@@ -152,13 +157,20 @@ body {
 }
 
 .skill-box, .skill-box-first {
+    background-color: #0c0f0d;
     display: flex;
     width: 75%;
     height: 13vh;
     /* border: 1px white solid; */
-    margin: 2% auto 35px auto; 
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px;
     /* margin for first */
 
+}
+
+.skill-box-first {
+    margin-top: 2%;
 }
 .skill-img {
     width: 10%;
@@ -172,7 +184,6 @@ body {
     width: 90%;
     height: 100%;
 }
-
 .skill-bar {
     border-radius: 5px;
     margin-top: auto;
@@ -182,15 +193,75 @@ body {
     border: 1px white solid;
 }
 
-.skill {
+
+
+.animated.skill.forty.start {
+    width: 40%;
     background-color: white;
     height: 100%;
+    overflow: hidden;
+    transition: 2s ease;
+    animation: forty 3s ease-out;
 }
 
-.skill.eighty {
+.animated.skill.sixty.start {
+    width: 60%;
+    background-color: white;
+    height: 100%;
+    overflow: hidden;
+    transition: 2s ease;
+    animation: sixty 3s ease-out;
+}
+.animated.skill.seventy.start {
+    width: 70%;
+    background-color: white;
+    height: 100%;
+    overflow: hidden;
+    transition: 2s ease;
+    animation: seventy 3s ease-out;
+}
+.animated.skill.eighty.start {
     width: 80%;
+    background-color: white;
+    height: 100%;
+    overflow: hidden;
+    transition: 2s ease;
+    animation: eighty 3s ease-out;
+}
+.animated.skill.ninety.start {
+    background-color: white;
+    height: 100%;
+    width: 90%;
+    overflow: hidden;
+    transition: 2s ease;
+    animation: ninety 3s ease-out;
 }
 
+
+@keyframes ninety {
+    from {width: 0%;}   
+    to {width: 90%;}
+}
+
+@keyframes eighty {
+    from {width: 0%;}   
+    to {width: 80%;}
+}
+
+@keyframes seventy {
+    from {width: 0%;}   
+    to {width: 70%;}
+}
+
+@keyframes sixty {
+    from {width: 0%;}   
+    to {width: 60%;}
+}
+
+@keyframes forty {
+    from {width: 0%;}   
+    to {width: 40%;}
+}
 
 @media (max-width: 600px) {
     .sect-1,.sect-2 {
@@ -230,3 +301,5 @@ body {
         height: 60%;
     }
 }
+
+
