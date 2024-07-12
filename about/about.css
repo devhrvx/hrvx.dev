@@ -282,14 +282,13 @@ body {
         height: 100%;
     }
     .sect-2-txt {
-
         font-size: 70%;
         width: 100%;
     }
     .sect-2-img {
         margin-top: 2%;
-        margin-left: -3%;
-        margin-bottom: 1%;
+        margin-left: -6%;
+        margin-bottom: .5%;
         width: 100%;
     }
     #scene {
@@ -306,7 +305,7 @@ body {
         height: 2vh;
     }
     #img-skill {
-        width: 125%;
+        width: 135%;
         height: 55%;
     }
     .skl-ttl {
