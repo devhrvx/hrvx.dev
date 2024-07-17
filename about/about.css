@@ -136,8 +136,9 @@ body {
     flex-direction: column;
     width: 100%;
     margin-left: -3%;
-    height: 230vh;
+    height: fit-content;
     border-top: #fff 1px solid;
+    border-bottom: #fff 1px solid;
 }
 
 .skl-ttl {
@@ -261,6 +262,16 @@ body {
 @keyframes forty {
     from {width: 0%;}   
     to {width: 40%;}
+}
+
+
+.sect-3 {
+    width: 100%;
+    padding-left: 3%;
+    height: 16%;
+    background-color: #e4e4e4;
+    margin-left: -3%;
+    margin-top: 3%;
 }
 
 @media (max-width: 600px) {
