@@ -40,11 +40,11 @@ body {
     padding-right: 3%;
 }
 
-.abt {
+.sect-1 .abt {
     width: 92%;
 }
 
-.abt-txt {
+.sect-1 .abt .abt-txt {
     font-weight: 400;
     width: 55%;
     height: fit-content;
@@ -246,7 +246,7 @@ body {
 }
 
 #abt-trs {
-    color: #fffad7a4;
+    color: #ffab36d1;
 }
 
 #abt-img {
