@@ -1,15 +1,13 @@
-
-@keyframes fade-in {
-    0% { opacity: 0 }
-    100% { opacity: 1 }
-}
 body {
     background-color: #0c0f0d;
 }
 
+/* Classes */
+
 .head {
     background-color:  #0c0f0d;
 }
+
 .title {
     height: fit-content;
     line-height: 1.1;
@@ -22,23 +20,6 @@ body {
     color: #fff;
     letter-spacing: 2px;
     margin-bottom: -1%;
-}
-
-#about {
-    width: 280px;
-    border-right: #00ff40 2px solid;
-    display: inline-block;
-    white-space: nowrap;
-    overflow: hidden;
-    animation: typing 1s steps(10), cursor .7s step-end infinite;
-}
-
-@keyframes cursor {
-    50% { border-color: transparent;}
-}
-
-@keyframes typing {
-    from { width: 0 }
 }
 
 .sect-1 {
@@ -71,26 +52,6 @@ body {
     position: absolute;
 }
 
-#abt-trs {
-    color: #fffad7a4;
-}
-
-#abt-img {
-    z-index: 8;
-    position: absolute;
-    height: 500px;
-    right: 10%;
-    margin-top: .5%;
-    opacity: .989;
-}
-/* 
-    put on all elements for fade-in:
-
-    transform: translateY(20px);
-    opacity: 0;
-
-*/
-
 .sect-2 {
     width: 100%;
     margin-left: -3%;
@@ -102,6 +63,7 @@ body {
     align-items: center;
     margin-bottom: 30px;
 }
+
 .sect-2-txt {
     font-weight: 500;
     font-size: 120%;
@@ -109,15 +71,11 @@ body {
     width: 50%;
     height: fit-content;
 }
+
 .sect-2-img {
     width: 30%;
     border-radius: 2px;
     height: 35vh;
-}
-
-#scene {
-    height: 100%;
-    width: 100%;
 }
 
 .skills-sect {
@@ -148,31 +106,6 @@ body {
     margin-left: 4%;
 }
 
-#asterisk {
-    color: #00ff40;
-    font-size: 80%;
-    vertical-align: super;
-    cursor: pointer;
-    display: inline-block;
-    transition: 1s ease-out;
-}
-
-#asterisk:hover {
-    transition: 1s ease-out;
-    animation-delay: .5s;
-    animation: wee 1s linear infinite;
-}
-
-@keyframes wee {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
-    
-}
-
 .skill-box, .skill-box-first {
     background-color: #0c0f0d;
     display: flex;
@@ -189,6 +122,7 @@ body {
 .skill-box-first {
     margin-top: 2%;
 }
+
 .skill-img {
     width: 10%;
     height: 13vh;
@@ -197,10 +131,6 @@ body {
     margin-bottom: auto;
 }
 
-#img-skill {
-    width: 90%;
-    height: 90%;
-}
 .skill-bar {
     border-radius: 5px;
     margin-top: auto;
@@ -209,8 +139,6 @@ body {
     height: 3.3vh;
     border: 1px white solid;
 }
-
-
 
 .animated.skill.forty.start {
     width: 40%;
@@ -229,6 +157,7 @@ body {
     transition: 2s ease;
     animation: sixty 3s ease-out;
 }
+
 .animated.skill.seventy.start {
     width: 70%;
     background-color: white;
@@ -237,6 +166,7 @@ body {
     transition: 2s ease;
     animation: seventy 3s ease-out;
 }
+
 .animated.skill.eighty.start {
     width: 80%;
     background-color: white;
@@ -245,6 +175,7 @@ body {
     transition: 2s ease;
     animation: eighty 3s ease-out;
 }
+
 .animated.skill.ninety.start {
     background-color: white;
     height: 100%;
@@ -254,6 +185,111 @@ body {
     animation: ninety 3s ease-out;
 }
 
+.cert-section {
+    margin-top: 1%;
+    height: fit-content;
+    width: 100%;
+    margin-left: -3%;
+    padding-left: 2%;
+    background-color: #0b2b13;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    justify-content: space-evenly;
+}
+
+.cert-ttl {
+    font-family: 'Space Mono', sans-serif;
+    font-size: 350%;
+    width: 100%;
+    height: fit-content;
+    margin-left: -3%;
+    background-color: #0c0f0d;
+    padding-left: 4.5%;
+}
+
+.list {
+    font-size: 150%;
+    line-height: 200%;
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    height: 70%;
+    /* border: 1px white solid; */
+    margin-left: 2%;
+    
+}
+
+.awards {
+    color: #13c663;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    transition: .3s ease;
+}
+
+.awards:hover {
+    color: #00ff40;
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+    transition: .3s ease;
+}
+
+
+/* ID styles */
+
+#about {
+    width: 280px;
+    border-right: #00ff40 2px solid;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 1s steps(10), cursor .7s step-end infinite;
+}
+
+#abt-trs {
+    color: #fffad7a4;
+}
+
+#abt-img {
+    z-index: 8;
+    position: absolute;
+    height: 500px;
+    right: 10%;
+    margin-top: .5%;
+    opacity: .989;
+}
+
+#scene {
+    height: 100%;
+    width: 100%;
+}
+
+#asterisk {
+    color: #00ff40;
+    font-size: 80%;
+    vertical-align: super;
+    cursor: pointer;
+    display: inline-block;
+    transition: 1s ease-out;
+}
+
+#asterisk:hover {
+    transition: 1s ease-out;
+    animation-delay: .5s;
+    animation: wee 1s linear infinite;
+}
+
+#img-skill {
+    width: 90%;
+    height: 90%;
+}
+
+
+/* Keyframes */
+
+@keyframes fade-in {
+    0% { opacity: 0 }
+    100% { opacity: 1 }
+}
 
 @keyframes ninety {
     from {width: 0%;}   
@@ -280,52 +316,24 @@ body {
     to {width: 40%;}
 }
 
-.cert-section {
-    margin-top: 1%;
-    height: fit-content;
-    width: 100%;
-    margin-left: -3%;
-    padding-left: 2%;
-    background-color: #0b2b13;
-    display: flex;
-    flex-direction: column;
-    color: #fff;
-    justify-content: space-evenly;
+@keyframes wee {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
 
-.cert-ttl {
-    font-family: 'Space Mono', sans-serif;
-    font-size: 350%;
-    width: 100%;
-    height: fit-content;
-    margin-left: -3%;
-    background-color: #0c0f0d;
-    padding-left: 4.5%;
-}
-.list {
-    font-size: 150%;
-    line-height: 200%;
-    font-family: 'Montserrat', sans-serif;
-    width: 100%;
-    height: 70%;
-    /* border: 1px white solid; */
-    margin-left: 2%;
-    
+@keyframes cursor {
+    50% { border-color: transparent;}
 }
 
-.awards {
-    color: #13c663;
-    text-decoration-line: underline;
-    text-decoration-style: solid;
-    transition: .3s ease;
+@keyframes typing {
+    from { width: 0 }
 }
 
-.awards:hover {
-    color: #00ff40;
-    text-decoration-line: underline;
-    text-decoration-style: wavy;
-    transition: .3s ease;
-}
+/* Mobile View */
 @media (max-width: 600px) {
     .sect-1,.sect-2 {
         flex-direction: column;
@@ -384,4 +392,3 @@ body {
         margin-bottom: 2%;
     }
 }
-
