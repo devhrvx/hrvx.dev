@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 
                 setTimeout(() => {
                     entry.target.classList.add('start');
-                }, 500);
+                }, 700);
                 observer.unobserve(entry.target);
             }
         });

@@ -199,7 +199,7 @@ body {
 
 #img-skill {
     width: 90%;
-    height: 100%;
+    height: 90%;
 }
 .skill-bar {
     border-radius: 5px;
@@ -369,8 +369,8 @@ body {
         height: 2vh;
     }
     #img-skill {
-        width: 135%;
-        height: 55%;
+        width: 86%;
+        height: 50%;
     }
     .skl-ttl {
         font-size: 170%;
