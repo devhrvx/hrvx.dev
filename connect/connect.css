@@ -1,0 +1,80 @@
+body {
+    background-color: #0c0f0d;
+    min-height: 100vh;
+}
+
+.head {
+    background-color: #0c0f0d;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container {
+    margin-left: -3%;
+    width: 100%;
+}
+
+.container .slider-wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+}
+
+.card-list .card-item {
+    color: #fff;
+    background: rgba(255, 255, 255, 0.2);
+    width: 380px;
+    padding: 35px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, .5);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    backdrop-filter: blur(12px);
+}
+
+.card-list .card-item .socials-logo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 9%;
+    border: 3px solid #fff;
+    padding: 4px;
+}
+
+.card-list .card-item .social-name {
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 1%;
+}
+
+.card-list .card-item .username {
+    font-family: 'Space Mono', sans-serif;
+    font-size: 1.1rem;
+    color: #e3e3e3;
+    margin-bottom: 10%;
+}
+
+.card-list .card-item .connect-button {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    padding: 10px 30px;
+    color: #0c0f0d;
+    border-radius: 6px;
+    font-weight: 500;
+    cursor: pointer;
+    background: #fff;
+    border: 1px solid transparent;
+    transition: .3s ease;
+}
+
+.card-list .card-item .connect-button:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid #fff;
+    color: #fff;
+}
