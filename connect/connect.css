@@ -24,12 +24,14 @@ body {
 .container .slider-wrapper {
     margin-left: auto;
     margin-right: auto;
-    width: 100%;
+    width: 90%;
     overflow: hidden;
     max-width: 1200px;
 }
 .slider-wrapper {
     overflow: hidden;
+    max-width: 1200px;
+    margin: 0 70px 55px;
 }
 .card-list .card-item {
     color: #fff;
@@ -48,8 +50,8 @@ body {
 }
 
 .card-list .card-item .socials-logo {
-    width: 150px;
-    height: 150px;
+    width: 50%;
+    height: 50%;
     border-radius: 50%;
     margin-bottom: 9%;
     border: 3px solid #fff;
@@ -96,19 +98,33 @@ body {
 
 .slider-wrapper .swiper-buttons {
     color: #00ff40;
+    font-weight: bold;
+    transition: .3s ease;
+}
+
+.slider-wrapper .swiper-buttons:hover {
+    color: #09cd1d;
     font-weight: bolder;
 }
 
 @media (max-width: 800px) {
     .card-list .card-item .username {
-        font-size: 85%;
+        font-size: 110%;
     }
 
     .card-list .card-item .social-name {
-        font-size: 95%;
+        font-size: 110%;
     }
 
     .card-list .cart-item .connect-button {
         font-size: 90%;
+    }
+
+    .slider-wrapper {
+        margin: 0 10px 40px;
+    }
+
+    .slider-wrapper .swiper-buttons{
+        display: none;
     }
 }
