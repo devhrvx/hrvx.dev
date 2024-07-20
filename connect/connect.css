@@ -1,6 +1,9 @@
 body {
     background-color: #0c0f0d;
     min-height: 100vh;
+    background-image: url("../res/Connect.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .head {
@@ -12,9 +15,96 @@ body {
     padding: 0;
     box-sizing: border-box;
 }
+
 .all {
     margin: 0;
 }
+
+.info-box {
+    height: 40%;
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 3%;
+}
+
+.info-box .pfp {
+    width: 18%;
+    height: 86%;
+    border: 3px solid #fff;
+    padding: .5%;
+    border-radius: 50%;
+}
+
+.info-box .pfp #my-face {
+    width: 100%;
+    border-radius: 50%;
+    height: 100%;
+}
+
+.info-box .name-container {
+    align-items: center;
+    width: 79%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    padding-left: 2%;
+    overflow: hidden;
+}
+
+.info-box .name-container .name {
+    width: 100%;
+    height: 50%;
+    text-align: baseline;
+    align-content: end;
+    justify-content: baseline;
+    font-size: 320%;
+    font-weight: bold;
+    margin-left: 4%;
+}
+
+hr {
+    background-color: #09cd1d;
+    height: 3px;
+    border: transparent;
+}
+
+
+.info-box .name-container .location {
+    /* border: 1px saddlebrown solid; */
+    margin-top: 2%;
+    height: 40%;
+    margin-left: 3%;
+    width: 100%;
+    text-align: left;
+    align-content: normal;
+    font-size: 130%;
+    display: flex;
+    flex-direction: row;
+}
+
+.info-box .name-container .location .location-pin {
+    width: 3%;
+    margin-top: .3%;
+}
+
+.info-box .name-container .location .location-pin   #location-pin {
+    width: 20px;
+    margin-right: .5%;
+    margin-left: 2%;
+}
+
+.info-box .name-container .location #location {
+    line-height: 4px;
+    text-align: start;
+}
+
 .container.swiper {
     width: 90%;
     margin-right: auto;
@@ -46,7 +136,8 @@ body {
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    backdrop-filter: blur(28px);
+    backdrop-filter: blur(17px);
+    transition: .9s ease;
 }
 
 .card-list .card-item .socials-logo {
@@ -110,6 +201,7 @@ body {
 @media (max-width: 800px) {
     .card-list .card-item .username {
         font-size: 110%;
+        height: 50%;
     }
 
     .card-list .card-item .social-name {
@@ -126,5 +218,85 @@ body {
 
     .slider-wrapper .swiper-buttons{
         display: none;
+    }
+
+    .info-box {
+        flex-direction: column;
+        height: 50%;
+    }
+
+    .info-box .pfp {
+        width: 80%;
+        height: 76%;
+    }
+    
+
+    .info-box .name-container .name{
+        font-size: 140%;
+        align-content: center;
+        text-align: center;
+    }
+
+    .info-box .name-container .location {
+        font-size: 90%;
+        align-content: center;
+        text-align: center;
+    }
+
+    .info-box .name-container .location .location-pin {
+        width: 5%;
+    }
+}
+
+@media (max-width: 1000px) {
+    .card-list .card-item .username {
+        font-size: 100%;
+        height: 50%;
+    }
+
+    .card-list .card-item .social-name {
+        font-size: 110%;
+    }
+
+    .card-list .cart-item .connect-button {
+        font-size: 80%;
+    }
+
+    .slider-wrapper {
+        margin: 0 10px 40px;
+    }
+
+    .info-box {
+        flex-direction: column;
+        height: 50%;
+    }
+
+    .info-box .pfp {
+        width: 30%;
+        height: 85%;
+    }
+
+    .info-box .name-container .name{
+        font-size: 150%;
+        align-content: center;
+        text-align: center;
+    }
+
+    .info-box .name-container .location {
+        font-size: 100%;
+        align-content: center;
+        text-align: center;
+    }
+}
+
+
+@media (max-width: 1100px) {
+    .card-list .card-item .username {
+        font-size: 83%;
+    }
+
+    .info-box .pfp {
+        width: 50%;
+        height: 73%;
     }
 }
