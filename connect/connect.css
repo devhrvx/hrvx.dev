@@ -137,7 +137,6 @@ hr {
     flex-direction: column;
     justify-content: center;
     backdrop-filter: blur(17px);
-    transition: .9s ease;
 }
 
 .card-list .card-item .socials-logo {
