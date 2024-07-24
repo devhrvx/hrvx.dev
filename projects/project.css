@@ -31,27 +31,35 @@ body {
     display: flex;
     flex-direction: column;
     width: 93%;
-    border: 1px white solid;
     margin-bottom: 4%;
-    height: 200px;
+    height: 300px;
     color: white;
+    background-color: #e1fde52a;
+    border-radius: 4px;
+    backdrop-filter: blur(18px);
+}
+.major-projects {
     justify-content: space-between;
 }
 
 .minor-projects .minor-title, .major-projects .major-title {
+    padding-left: 2%;
+    width: 98;
+    padding-top: .5%;
+    padding-bottom: .5%;
     font-family: 'Montserrat', sans-serif;
     font-size: 230%;
     font-weight: 600;
     height: fit-content;
-    width: fit-content;
     justify-content: center;
-    text-align: center;
+    text-align: left;
     justify-content: center;
-    padding-left: 2.6%;
+    margin-bottom: 2%;
+    border-bottom: #fff 1px solid;
 }
 
 .major-projects .notice-item {
-    height: 80%;
+    height: 90%;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -59,8 +67,9 @@ body {
 }
 
 .major-projects .notice-item .github-logo {
-    width: 3%;
-    height: 30%;
+    margin-bottom: 5px;
+    width: 4%;
+    height: 25%;
     background-image: url('../res/github.png');
     background-size: cover;
     padding: 1.7%;
@@ -69,6 +78,7 @@ body {
 
 .major-projects .notice-item .notice-text {
     font-family: 'Space Mono', sans-serif;
+    margin-bottom: 5px;
 }
 
 .major-projects .notice-item .go-button {
@@ -77,7 +87,7 @@ body {
     border: #fff 1px solid;
     background-color: #fff;
     cursor: pointer;
-    margin-bottom: 1%;
+    margin-bottom: .5%;
     border-radius: 8px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
@@ -88,6 +98,14 @@ body {
     background-color: rgba(255, 255, 255, .2);
     color: #00ff40;
     border: 1px solid #00ff40;
+}
+
+.minor-projects .minor-title {
+    margin-bottom: 0;
+}
+.minor-projects .minor-projects-wrapper {
+    border: #fff 2px solid;
+    height: 90%;
 }
 
 @keyframes cursor {
