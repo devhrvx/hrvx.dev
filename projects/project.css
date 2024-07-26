@@ -1,5 +1,8 @@
 body {
     background-color: #0c0f0d;
+    background-image: url('../res/Projects.svg');
+    background-size: cover;
+    background-position: center;
 }
 
 .head {
@@ -275,5 +278,12 @@ h1 {
     }
     .projects-title {
         font-size: 320%;
+    }
+
+    body {
+        background-color: #0c0f0d;
+        background-image: url('../res/Projects.svg');
+        background-size: cover;
+        background-position: right;
     }
 }
