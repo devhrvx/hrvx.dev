@@ -112,6 +112,7 @@ body {
 .swiper {
     width: 100%;
     height: 85%;
+    cursor: grab;
     .swiper-slide {
         width: 33%;
         color: #0c0f0d;
@@ -124,15 +125,42 @@ body {
     }
 }
 
+.swiper:active {
+    cursor: grabbing;
+}
+
 .swiper .swiper-wrapper .swiper-slide .item-image {
+    cursor: pointer;
     width: 57%;
     height: 80%;
     text-align: center;
     align-items: center;
     justify-content: center;
     /* border: 1px white solid; */
+    /* -webkit-filter: grayscale(100%);
+    filter: grayscale(100%); */
 }
 
+.item-image.rng {
+    background-image: url('../res/Screenshot\ 2024-07-25\ 183738.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.item-image.silly {
+    background-image: url('../res/silly.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.item-image.sqlite {
+    background-image: url('../res/Screenshot_20240623_120907.jpg');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
 .swiper .swiper-wrapper .swiper-slide .item-info {
     display: flex;
     flex-direction: column;
@@ -143,6 +171,9 @@ body {
     height: 100%;
 }
 .swiper .swiper-wrapper .swiper-slide .item-info .info-title {
+    text-decoration-line: underline;
+    text-decoration-thickness: 2px;
+    cursor: pointer;
     padding: 0;
     font-size: 200%;
     font-weight: 400;
@@ -151,6 +182,12 @@ body {
     width: 99%;
     /* border: 1px white solid; */
     text-align: left;
+    transition: .3s ease;
+}
+
+.swiper .swiper-wrapper .swiper-slide .item-info .info-title:hover {
+    color: #00ff40;
+    text-decoration-style: wavy;
 }
 .swiper .swiper-wrapper .swiper-slide .item-info .info-text {
     height: 65%;
@@ -161,12 +198,21 @@ body {
 }
 
 #technologies {
-    color: #00ff40;
+    color: #ffdd00c8;
     font-weight: 700;
 }
 
+ul {
+    color: #ffdd00c8;
+}
+
 .swiper .swiper-scrollbar {
-   color: #fff;
+    background: rgba(255, 255, 255, .3);
+    color: #fff;
+}
+
+.swiper .swiper-scrollbar-drag {
+    background: rgb(222, 222, 222);
 }
 
 @keyframes cursor {
@@ -179,9 +225,42 @@ body {
 h1 {
     font-size: 100%;
     line-height: 1;
+    font-weight: 800;
+    letter-spacing: 1.5px;
 }
 
 @media (max-width: 600px) {
+
+    .swiper .swiper-wrapper .swiper-slide {
+        flex-direction: column;
+    }
+
+    .swiper .swiper-wrapper .swiper-slide .item-image {
+        height: 45%;
+        /* border: 1px white solid; */
+        width: 90%;
+    }
+
+    .swiper .swiper-wrapper .swiper-slide .item-info {
+        height: 50%;
+        width: 100%;
+        /* border: 1px white solid; */
+
+    }
+
+    .swiper .swiper-wrapper .swiper-slide .item-info .info-title {
+        font-size: 150%;
+        text-align: center;
+    
+    }
+
+    .swiper .swiper-wrapper .swiper-slide .item-info .info-text {
+        padding-left: 15px;
+        font-size: 90%;
+        width: 90%;
+        /* border: 1px white solid; */
+    }
+
     .major-projects .notice-item .go-button {
         width: 30%;
         margin-top: -8%;
@@ -190,8 +269,11 @@ h1 {
         text-align: center;
     }
     .major-projects .notice-item .github-logo {
-        width: 13%;
-        height: 20.5%;
+        width: 80px;
+        height: 80px;
         margin-bottom: -10%;
+    }
+    .projects-title {
+        font-size: 320%;
     }
 }

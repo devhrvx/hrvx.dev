@@ -3,10 +3,10 @@ document.addEventListener('DOMContentLoaded', function() {
         slidesPerView: 2,
         loop: true,
         spaceBetween: 15,
-        grabCursor: true,
-      
+
         scrollbar: {
           el: '.swiper-scrollbar',
+          draggable: true,
         },
 
         breakpoints: {
