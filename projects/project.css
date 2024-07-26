@@ -38,6 +38,11 @@ body {
     border-radius: 4px;
     backdrop-filter: blur(18px);
 }
+
+.minor-projects {
+    padding-bottom: 5px;
+}
+
 .major-projects {
     justify-content: space-between;
 }
@@ -115,6 +120,7 @@ body {
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
+        border-radius: 8px;
     }
 }
 
@@ -124,32 +130,40 @@ body {
     text-align: center;
     align-items: center;
     justify-content: center;
-    border: 1px white solid;
+    /* border: 1px white solid; */
 }
 
 .swiper .swiper-wrapper .swiper-slide .item-info {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     color: #fff;
     width: 40%;
     height: 100%;
 }
 .swiper .swiper-wrapper .swiper-slide .item-info .info-title {
+    padding: 0;
     font-size: 200%;
     font-weight: 400;
     font-family: 'Space Mono', sans-serif;
-    height: 30%;
+    height: auto;
     width: 99%;
-    border: 1px solid white;
+    /* border: 1px white solid; */
     text-align: left;
 }
 .swiper .swiper-wrapper .swiper-slide .item-info .info-text {
-    height: 70%;
+    height: 65%;
     width: 99%;
-    border: 1px solid white;
     font-family: 'Montserrat', sans-serif;
+    /* border: 1px white solid; */
+    overflow: auto;
 }
 
+#technologies {
+    color: #00ff40;
+    font-weight: 700;
+}
 
 .swiper .swiper-scrollbar {
    color: #fff;
@@ -162,17 +176,22 @@ body {
 @keyframes typing {
     from { width: 0 }
 }
-
+h1 {
+    font-size: 100%;
+    line-height: 1;
+}
 
 @media (max-width: 600px) {
     .major-projects .notice-item .go-button {
         width: 30%;
+        margin-top: -8%;
     }
     .major-projects .notice-item .notice-text {
         text-align: center;
     }
     .major-projects .notice-item .github-logo {
-        width: 20%;
-        height: 28%;
+        width: 13%;
+        height: 20.5%;
+        margin-bottom: -10%;
     }
 }
