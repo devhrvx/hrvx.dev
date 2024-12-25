@@ -75,7 +75,7 @@ body {
 }
 
 .major-projects .notice-item .github-logo {
-    margin-bottom: 5px;
+    margin-bottom: -5vh;
     width: 6%;
     height: 27%;
     background-image: url('../res/github.png');
@@ -145,7 +145,7 @@ body {
 }
 
 .item-image.rng {
-    background-image: url('../res/Screenshot\ 2024-07-25\ 183738.png');
+    background-image: url('../res/landing.png');
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
